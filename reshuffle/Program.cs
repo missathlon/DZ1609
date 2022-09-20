@@ -33,12 +33,7 @@ void Permute(char[] a, int i, int n)
             a[i] = a[j];
             a[j] = temp;
 
-            Permute(a, i + 1, n);
-
-            // swap(a[i], a[j]);
-            temp = a[i];
-            a[i] = a[j];
-            a[j] = temp;
+            Permute(a, i + 1, n);            
         }
     }
 }
